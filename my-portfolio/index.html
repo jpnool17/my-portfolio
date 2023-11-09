@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3b7630341e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#services">My Services</a></li>
+                        <li><a href="#myexperience">My Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm John Paul Nool!</h1>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-img">
+                        <img src="images/jpnool.jpg" class="me">
+                    </div>
+                    <div class="about-col-text">
+                        <h1 class="sub-title">About me</h1>
+                        <p>A dedicated and enthusiastic Team Leader with 12 years of programming experience. Professional, Creative, 
+                            flexible with proven analytical and logical skills, able to adapt to changing priorities and maintain a 
+                            positive attitude and strong work ethic. </p>
+                            <div class="tab-names">
+                                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                                <p class="tab-links" onclick="openTab('experience')">Work Experience</p>
+                                <p class="tab-links" onclick="openTab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Team Leading</span>
+                                        <br>Handled 4 projects as a team lead</li>
+                                    <li><span>Web Development</span>
+                                        <br>Develop a Web app using Javascript, VueJS and ReactJS</li>
+                                    <li><span>Backend Development</span>
+                                        <br>Develop APIs that will be used to communicate with the server, system or database</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Sourcefit PH Inc. (May 2021 - Current)</span>
+                                        <br>Role: Web developer
+                                        <br>Project/s: Sensely</li>
+                                    <li><span>Accenture (Sept. 2017 - Apr. 2021)</span>
+                                        <br>Role: Team Lead
+                                        <br>Project/s: Exelon, SADAD, Mufeed and Conciearch</li>
+                                    <li><span>Sandman Software System Inc.</span>
+                                        <br>Role: Senior Developer
+                                        <br>Project/s: Creo and Web dev team</li>    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>University of Santo Tomas (2007-2011)</span>
+                                        <br>BS Information Technology</li>
+                                    <li><span>Roosevelt College Quirino (2003-2007)</span>
+                                        <br>Secondary school</li>
+                                    <li><span>Balara Elementary School (1997-2003)</span>
+                                        <br>Primary school</li>    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>Team Leading</h2>
+                        <p> Good team leader with an experience leading a team. Back in Accenture I've handled 4 of my last project as a team lead.
+                            I also got a Gem Awardee as a team lead by finishing a complex task for our team. My team are also recognized as we cut down 
+                            the volume of tickets/issues in our project. </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p> With an 8 years experience as a web developer. Have skills in Javascript, Flutter, VueJS, AJAX, JQuery and Bootstrap. I also self-studied ReactJS and AngularJS.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-link"></i>
+                        <h2>Backend Development</h2>
+                        <p> With a 3 years experience as a backend developer. Have skills in NodeJS, RESTful API, PHP (Laravel), MySQL, MSSQL and MongoDB. I'm also familiar with Database integration.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- working experience -->
+        <div id="myexperience">
+            <div class="container">
+                <h1 class="sub-title">My Working Experience</h1>
+                <div class="experience-list">
+                    <div class="experience">
+                        <img src="images/sfms.jpg">
+                        <div class="layer">
+                            <h3> Sourcefit PH Inc.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="images/accenture.jpg">
+                        <div class="layer">
+                            <h3> Accenture</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="images/sssi.jpg">
+                        <div class="layer">
+                            <h3> Sandman Software System Inc.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-col-details">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>  jjampps@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>  0994-487-9035</p>
+                        <a href="resources/RESUME_JP_2023.docx" download class="btn button">Download CV</a>
+                    </div>
+                    <div class="contact-col-send">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © John Paul Nool</p>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-angle-up"></i></button>
+
+        <script>
+            // Get the class tab-links and tab-contents
+            let tabLinks = document.getElementsByClassName('tab-links');
+            let tabContents = document.getElementsByClassName('tab-contents');
+
+            function openTab(tabName){
+                for(tabLink of tabLinks){
+                    // remove the active-link class from the current tab
+                    tabLink.classList.remove("active-link");
+                }
+                for(tabContent of tabContents){
+                    // remove the active-tab class from the current tab
+                    tabContent.classList.remove("active-tab");
+                }
+                // add the active-link class to the clicked tab
+                event.currentTarget.classList.add("active-link");
+                // add the active-tab class to the clicked tab
+                document.getElementById(tabName).classList.add("active-tab");
+            }
+
+            // Get the element sidemenu
+            let sideMenu = document.getElementById('sidemenu');
+            function openMenu(){
+                // set the style right to 0 to show the side menu
+                sideMenu.style.right = "0";
+            }
+            function closeMenu(){
+                // set the style right to 0 to hide the side menu
+                sideMenu.style.right = "-200px";
+            }
+
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </body>
+</html>
